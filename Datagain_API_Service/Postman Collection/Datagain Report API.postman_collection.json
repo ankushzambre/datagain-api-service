@@ -1,0 +1,73 @@
+{
+	"info": {
+		"_postman_id": "b93392db-3328-42a4-9a74-4eccb2d59d78",
+		"name": "Datagain Report API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26242638"
+	},
+	"item": [
+		{
+			"name": "Get Company List",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7016/Report/GenrateCompnyList",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7016",
+					"path": [
+						"Report",
+						"GenrateCompnyList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Generate Report API ",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:7016/Report/GenrateReport?tax_year=2022&company_code=19",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7016",
+					"path": [
+						"Report",
+						"GenrateReport"
+					],
+					"query": [
+						{
+							"key": "tax_year",
+							"value": "2022"
+						},
+						{
+							"key": "company_code",
+							"value": "19"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
